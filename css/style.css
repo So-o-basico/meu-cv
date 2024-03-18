@@ -1,0 +1,48 @@
+header{
+    display: flex;
+    justify-content: space-between; /*alinha as coisa uma pra cada lado*/
+    background-color:#003400;
+    padding: 10px 20px;  
+    border-bottom: solid 10px #000;
+}
+nav{
+    text-align: right;
+}
+img{
+    width: 60px;
+    height: 60px;
+}
+a{
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;/*tamanho da font*/
+    font-family: "Fira Code";/*qual a fonte vai ser usada*/
+    font-weight: 500;/*tamanho da font*/
+    text-decoration: none;/*tira a decoracao do texto*/
+    margin-right:30px;
+}
+
+a::before{ /*pseudo elemento usado pra fazer um css no final de algun texto */
+    content: ""; /* teg de conteudo do CSS */
+    width:10px;
+    height: 10px;
+    margin-right:5px;
+    background-color:#340034;
+   
+}
+
+#button{
+    display: inline-block;/*define um comportamento na caixa*/
+    background: #340034;
+    height:60px;/*altura*/
+    line-height: 60px; /*define a altura de uma caixa de linha*/
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 5px 5px 0 #000;/*adiciona sombreado*/
+    margin-right: 0;
+    transition: 200ms ease-in-out;/*teg para fazer uma animaçao, volocidade da animaçao e o tipo da animaçao */
+}
+#button:hover{/*teg para fazer uma animaçao qunado passa o mause em cima*/
+    transform: scale(1.05);/*propriedade de escala do tamanho*/
+}
